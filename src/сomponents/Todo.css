@@ -1,0 +1,156 @@
+* {
+  font-size: 20px;
+}
+.TodoList {
+  min-width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.TodoForm input {
+  max-width: 60%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid rgb(74, 74, 74);
+}
+.TodoForm button {
+  margin-left: 5px;
+  padding: 10px 30px;
+  background-color: #35d388;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.TodoForm button:hover {
+  background-color: #27a168;
+}
+
+.todo {
+  padding: 5px 0;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo span {
+  white-space: wrap;
+  overflow: hidden;
+  word-break: break-all;
+}
+.todo button {
+  padding: 6px 16px;
+  border: none;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.wrapper {
+  gap: 2%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.filterTable {
+  min-width: 25%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #ffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.filter label {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.filter label:hover {
+  cursor: pointer;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+.checked {
+  width: 18px;
+  height: 18px;
+}
+
+.todo button:hover {
+  background-color: #d40000;
+}
+
+.doneTodos {
+  padding: 15px 0;
+}
+
+.createdAt {
+  font-size: 14px;
+  color: #999999;
+}
+
+.del-dat {
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 0 3px;
+}
+
+@media (max-width: 620px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: flex-start;
+  }
+
+  .filterTable {
+    min-width: 85%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .TodoList {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .TodoForm input {
+    max-width: 90%;
+  }
+  .TodoList {
+    max-width: 95%;
+  }
+  .todo {
+    max-width: 97%;
+  }
+  .createdAt {
+    font-size: 10px;
+    color: #999999;
+  }
+}
